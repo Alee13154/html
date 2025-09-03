@@ -1,0 +1,5 @@
+# Contador de vocales
+palabra = input("Escribe una palabra: ").lower()
+vocales = "aeiou"
+contador = sum(1 for letra in palabra if letra in vocales)
+print(f"La palabra '{palabra}' tiene {contador} vocal(es).")
