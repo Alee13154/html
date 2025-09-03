@@ -1,0 +1,7 @@
+import random
+
+print("=== Generador de números aleatorios ===")
+inicio = int(input("Número mínimo: "))
+fin = int(input("Número máximo: "))
+numero = random.randint(inicio, fin)
+print(f"Número aleatorio generado: {numero}")
