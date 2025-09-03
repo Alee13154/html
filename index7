@@ -1,0 +1,5 @@
+# Calculadora de descuento
+precio = float(input("Precio del producto: Q"))
+descuento = float(input("Porcentaje de descuento: "))
+precio_final = precio - (precio * descuento / 100)
+print(f"El precio con descuento es: Q{precio_final:.2f}")
