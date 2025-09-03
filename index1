@@ -1,0 +1,9 @@
+# Calculadora básica
+print("=== Calculadora Básica ===")
+a = float(input("Ingresa el primer número: "))
+b = float(input("Ingresa el segundo número: "))
+
+print("\nSuma:", a + b)
+print("Resta:", a - b)
+print("Multiplicación:", a * b)
+print("División:", a / b if b != 0 else "Error: división entre 0")
