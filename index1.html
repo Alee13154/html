@@ -1,9 +1,23 @@
-# Calculadora básica
-print("=== Calculadora Básica ===")
-a = float(input("Ingresa el primer número: "))
-b = float(input("Ingresa el segundo número: "))
-
-print("\nSuma:", a + b)
-print("Resta:", a - b)
-print("Multiplicación:", a * b)
-print("División:", a / b if b != 0 else "Error: división entre 0")
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Adivina el Número</title>
+</head>
+<body>
+<h2>Adivina el número (1-10)</h2>
+<input type="number" id="num">
+<button onclick="jugar()">Adivinar</button>
+<p id="resultado"></p>
+<script>
+let secreto = Math.floor(Math.random() * 10) + 1;
+function jugar() {
+  let n = parseInt(document.getElementById("num").value);
+  let r = document.getElementById("resultado");
+  if (n === secreto) r.textContent = "¡Correcto!";
+  else if (n < secreto) r.textContent = "Demasiado bajo 😅";
+  else r.textContent = "Demasiado alto 😮";
+}
+</script>
+</body>
+</html>
